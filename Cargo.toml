@@ -19,3 +19,4 @@ reqwest = { version = "0.11.6", features = [
     "json",
 ] }
 acunetix_sdk = { path = "acunetix_sdk", package = "acunetix_sdk" }
+#openapi-generator-cli generate -g rust -i openapi.yaml -o acunetix_sdk --package-name acunetix_sdk

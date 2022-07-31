@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**add_target**](DefaultApi.md#add_target) | **POST** /targets | Add a new target to the scan list
 [**delete_scan**](DefaultApi.md#delete_scan) | **DELETE** /scans/{scanid} | delete scan by scanid
 [**delete_target**](DefaultApi.md#delete_target) | **DELETE** /targets/{targetid} | get target by id
-[**get_info**](DefaultApi.md#get_info) | **GET** /info | get awvs info
+[**get_info**](DefaultApi.md#get_info) | **GET** /info | get Acunetix info
 [**get_me**](DefaultApi.md#get_me) | **GET** /me | get user info
 [**get_scan_detail**](DefaultApi.md#get_scan_detail) | **GET** /scans/{scanid} | get scan status by scanid
 [**get_scan_profiles**](DefaultApi.md#get_scan_profiles) | **GET** /scanning_profiles | get scan profile
@@ -114,7 +114,7 @@ Name | Type | Description  | Required | Notes
 ## get_info
 
 > crate::models::Info get_info()
-get awvs info
+get Acunetix info
 
 ### Parameters
 

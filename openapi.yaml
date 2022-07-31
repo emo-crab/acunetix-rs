@@ -3,14 +3,14 @@ info:
   contact:
     email: apiteam@swagger.io
   description: |
-    Awvs12 client api
+    Acunetix12 client api
     [http://swagger.io](http://swagger.io) or on
     [irc.freenode.net, #swagger](http://swagger.io/irc/).
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   termsOfService: http://swagger.io/terms/
-  title: AWVS12 client api
+  title: Acunetix12 client api
   version: 1.0.0
 externalDocs:
   description: Find out more about Swagger
@@ -21,13 +21,13 @@ servers:
   variables:
     host:
       default: 127.0.0.1
-      description: awvs web host
+      description: Acunetix web host
     port:
       default: "13443"
-      description: awvs web port
+      description: Acunetix web port
     basePath:
       default: /api/v1
-      description: awvs api version path
+      description: Acunetix api version path
 paths:
   /me/login:
     post:
@@ -69,7 +69,7 @@ paths:
           description: Failure
       security:
       - api_key: []
-      summary: get awvs info
+      summary: get Acunetix info
   /targets:
     get:
       operationId: getTargets
