@@ -1,0 +1,23 @@
+[package]
+name = "acunetix_cli"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1.19.2", features = ["full"] }
+futures = { version = "0.3", features = ["compat"] }
+openssl = { version = "0.10", features = ["vendored"] }
+anyhow = "1"
+reqwest = { version = "0.11.6", features = [
+    "native-tls",
+    "socks",
+    "blocking",
+    "gzip",
+    "cookies",
+    "json",
+] }
+acunetix_sdk = { path = "../acunetix_sdk", package = "acunetix_sdk" }
+#openapi-generator-cli generate -g rust -i openapi.yaml -o acunetix_sdk --package-name acunetix_sdk
+argh = "0.1.8"

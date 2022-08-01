@@ -2,9 +2,12 @@ use std::time::Duration;
 use acunetix_sdk::apis::configuration::{ApiKey, Configuration};
 use acunetix_sdk::apis::default_api as acunetix_api;
 use reqwest::redirect::Policy;
+use acunetix_cli::cli::TopLevel;
 
 #[tokio::main]
 async fn main() {
+    let toplevel: TopLevel = argh::from_env();
+    println!("{:?}",toplevel);
     let mut api_config = Configuration::default();
     let api_key = ApiKey {
         prefix: None,
