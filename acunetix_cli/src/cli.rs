@@ -10,14 +10,14 @@ pub struct TopLevel {
 #[derive(FromArgs, PartialEq, Debug)]
 #[argh(subcommand)]
 enum MySubCommandEnum {
-    One(SubCommandOne),
-    Two(SubCommandTwo),
+    Target(SubCommandTarget),
+    Scan(SubCommandScan),
 }
 
 #[derive(FromArgs, PartialEq, Debug)]
 /// First subcommand.
-#[argh(subcommand, name = "one")]
-struct SubCommandOne {
+#[argh(subcommand, name = "target")]
+struct SubCommandTarget {
     #[argh(option)]
     /// how many x
     x: usize,
@@ -25,8 +25,8 @@ struct SubCommandOne {
 
 #[derive(FromArgs, PartialEq, Debug)]
 /// Second subcommand.
-#[argh(subcommand, name = "two")]
-struct SubCommandTwo {
+#[argh(subcommand, name = "scan")]
+struct SubCommandScan {
     #[argh(switch)]
     /// whether to fooey
     fooey: bool,
