@@ -1,7 +1,7 @@
 use {argh::FromArgs, std::fmt::Debug};
 
 #[derive(FromArgs, PartialEq, Debug)]
-/// Top-level command.
+#[argh(description = "AcunetixCli")]
 pub struct TopLevel {
     #[argh(subcommand)]
     nested: MySubCommandEnum,
@@ -15,19 +15,15 @@ enum MySubCommandEnum {
 }
 
 #[derive(FromArgs, PartialEq, Debug)]
-/// First subcommand.
-#[argh(subcommand, name = "target")]
+#[argh(subcommand, name = "target", description = "Target module.")]
 struct SubCommandTarget {
-    #[argh(option)]
-    /// how many x
-    x: usize,
+    #[argh(positional, description = "target")]
+    t: Vec<String>,
 }
 
 #[derive(FromArgs, PartialEq, Debug)]
-/// Second subcommand.
-#[argh(subcommand, name = "scan")]
+#[argh(subcommand, name = "scan", description = "Scan module.")]
 struct SubCommandScan {
-    #[argh(switch)]
-    /// whether to fooey
+    #[argh(switch, description = "or")]
     fooey: bool,
 }
