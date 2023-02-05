@@ -1,5 +1,5 @@
 [package]
-name = "acunetix_cli"
+name = "acunetix-cli"
 version = "0.1.0"
 edition = "2021"
 
@@ -18,6 +18,6 @@ reqwest = { version = "0.11.6", features = [
     "cookies",
     "json",
 ] }
-acunetix_sdk = { path = "../acunetix_sdk", package = "acunetix_sdk" }
-#openapi-generator-cli generate -g rust -i openapi.yaml -o acunetix_sdk --package-name acunetix_sdk
+acunetix_sdk = { path = "../acunetix-sdk", package = "acunetix-sdk" }
+#openapi-generator-cli generate -g rust -i openapi.yaml -o acunetix-sdk --package-name acunetix-sdk
 argh = "0.1.8"

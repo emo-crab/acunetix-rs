@@ -3,10 +3,10 @@
 version = 3
 
 [[package]]
-name = "acunetix_cli"
+name = "acunetix-cli"
 version = "0.1.0"
 dependencies = [
- "acunetix_sdk",
+ "acunetix-sdk",
  "anyhow",
  "argh",
  "futures 0.3.21",
@@ -16,11 +16,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "acunetix_gui"
-version = "0.1.0"
-
-[[package]]
-name = "acunetix_sdk"
+name = "acunetix-sdk"
 version = "1.0.0"
 dependencies = [
  "reqwest",
@@ -31,7 +27,11 @@ dependencies = [
 ]
 
 [[package]]
-name = "acunetix_std"
+name = "acunetix-std"
+version = "0.1.0"
+
+[[package]]
+name = "acunetix_gui"
 version = "0.1.0"
 
 [[package]]

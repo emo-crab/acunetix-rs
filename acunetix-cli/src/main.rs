@@ -21,7 +21,7 @@ async fn main() {
         .timeout(Duration::new(30, 0)).build().unwrap();
     api_config.api_key = Some(api_key);
     api_config.client = client;
-    api_config.base_path = String::from("https://192.168.0.116:13443/api/v1");
+    api_config.base_path = String::from("https://10.168.1.201:13443/api/v1");
     let me = acunetix_api::get_info(&api_config).await;
     println!("{:?}", me);
     println!("Hello, world!");

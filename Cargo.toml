@@ -1,7 +1,7 @@
 [workspace]
 members = [
-    "acunetix_sdk",
-    "acunetix_cli",
-    "acunetix_gui",
-    "acunetix_std"
+    "acunetix-sdk",
+    "acunetix-cli",
+    "acunetix-gui",
+    "acunetix-std"
 ]
